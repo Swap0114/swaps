@@ -42,4 +42,4 @@ jobs:
           echo "Username: ${{ vars.USERNAME }}"
           echo "Password Length: ${#PASSWORD}"
         env:
-           PASSWORD: ${#secrets.PASSWORD}"
+          PASSWORD: ${{ secrets.PASSWORD }}
