@@ -40,6 +40,6 @@ jobs:
         #run: echo "Username: ${{ vari.USERNAME }} and Password: ${{ secrets.PASSWORD }}"
         run: |
           echo "Username: ${{ vars.USERNAME }}"
-          echo "Password Length: ${#secrets.PASSWORD}"
+          echo "Password Length: ${#PASSWORD}"
         env:
-          echo "PASSWORD: ${#secrets.PASSWORD}"
+           PASSWORD: ${#secrets.PASSWORD}"
