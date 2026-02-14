@@ -11,6 +11,7 @@ on:
 jobs: 
   build:
     runs-on: ubuntu-latest
+    environment: QA
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -38,5 +39,5 @@ jobs:
       - name: get the user_name and password from github
         #run: echo "Username: ${{ vari.USERNAME }} and Password: ${{ secrets.PASSWORD }}"
         run: |
-          echo "Username: ${{ variables.USERNAME }}"
+          echo "Username: ${{ vars.USERNAME }}"
           echo "Password: ${{ secrets.PASSWORD }}"
